@@ -1,3 +1,4 @@
+
 import socket
 import sys
 import time
@@ -49,9 +50,9 @@ def process_start(s_sock):
 
 if __name__ == '__main__':
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(("",8080))                                   #CHANGE THIS
+    s.bind(("",8080))                                   #Port Number must same with client
     print("listening...")
-    s.listen(28)                                         #AND THIS TOO
+    s.listen(28)                                        
     
     try:
         while True:
